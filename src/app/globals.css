@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 230 25% 18%;
+    --card: 0 0% 100%;
+    --card-foreground: 230 25% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 25% 18%;
+    --primary: 258 84% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 174 100% 50%;
+    --secondary-foreground: 230 25% 18%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 230 25% 18%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 258 84% 64%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 230 28% 14%;
+    --foreground: 210 40% 98%;
+    --card: 230 28% 18%;
+    --card-foreground: 210 40% 98%;
+    --popover: 230 28% 18%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 258 84% 64%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 174 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 230 28% 22%;
+    --muted-foreground: 215 16% 67%;
+    --accent: 230 28% 22%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 28% 26%;
+    --input: 230 28% 26%;
+    --ring: 258 84% 64%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 25%, #a855f7 50%, #14b8a6 100%);
+}
+
+.stats-gradient {
+  background: linear-gradient(180deg, #1e1f3d 0%, #2a2b4a 100%);
+}
+
+.footer-gradient {
+  background: linear-gradient(180deg, #1a1b36 0%, #1e1f3d 100%);
+}
+
+.pricing-popular {
+  background: linear-gradient(180deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+}
+
+.icon-pink {
+  background: linear-gradient(135deg, #f472b6 0%, #ec4899 100%);
+}
+
+.icon-orange {
+  background: linear-gradient(135deg, #fbbf24 0%, #f97316 100%);
+}
+
+.icon-green {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+}
+
+.icon-purple {
+  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+}
+
+.icon-cyan {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+}
+
+.icon-magenta {
+  background: linear-gradient(135deg, #e879f9 0%, #d946ef 100%);
+}
+
+.dashboard-preview {
+  background: linear-gradient(180deg, #23243d 0%, #2d2f4a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.whatsapp-btn {
+  background: #25d366;
+}
+
+.whatsapp-btn:hover {
+  background: #128c7e;
+}
